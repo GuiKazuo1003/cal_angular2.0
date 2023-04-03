@@ -1,0 +1,21 @@
+
+<div>
+    <form class="box">
+        <h1>Calculadora</h1>
+        <label>Numero:</label>
+        <input type="number" name="num1" [(ngModel)]="num1">
+        <input type="number" name="num2" [(ngModel)]="num2">
+        <label>:Numero</label>
+        <br>
+        <br>
+        
+        <button id="somar" (click)="somar()">+</button>
+    
+        <button class="btnsub" id="subtrair" (click)="subtrair()">-</button>
+        <button id="multiplicar" (click)="multiplicar()">*</button>
+        <button id="dividir" (click)="dividir()">/</button> <!-- ()-> , template para classe -->
+        <br>
+        <br>
+        <input [value]="resultado"> <!-- []-> onewey , classe para o template-->
+    </form>
+</div>
